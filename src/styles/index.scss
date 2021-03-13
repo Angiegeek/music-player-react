@@ -1,13 +1,45 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-/* 
+// Playbar
+.playBar {
+    background-color: #595959;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    left:0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.playBar .fa-play-circle, .playBar .fa-pause-circle {
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    font-size: 2.5rem;
+    transition: transform 0.5s;
+}
 
-*/
+.playBar .fas.fa-play-circle:hover,
+.playBar .fas.fa-pause-circle:hover {
+
+    transform: scale(1.2, 1.2);
+}
+
+// Icons
+
+.fas {
+    font-size: 1.5rem;
+    color:#A6A6A6;
+}
+
+
+.fas:hover {
+    color: white;
+}
+
+// Table
+.table {
+    margin-bottom: 56px;
+    background-color: #F2786D;
+    font-family: 'Indie Flower', cursive;
+}
+
+
